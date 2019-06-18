@@ -62,7 +62,7 @@ def test_product_bought():
 
   boughtProduct = vm.buyProduct(5)
 
-  assert boughtProduct != False
+  assert boughtProduct != None
 
 def test_product_not_bought():
   vm = VendingMachine('hospital', initialCash = 130)
@@ -75,7 +75,7 @@ def test_product_not_bought():
   product = vm.slots[5]
   boughtProduct = vm.buyProduct(5)
 
-  assert boughtProduct == False
+  assert boughtProduct == None
 
 def test_rest():
   vm = VendingMachine('hospital', initialCash = 130)

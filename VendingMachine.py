@@ -40,4 +40,4 @@ class VendingMachine:
       self.insertedCoinsSum = self.insertedCoinsSum - product.price
       return product
     else:
-      return False
+      return None
